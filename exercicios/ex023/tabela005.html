@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela - Colgroup</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 5px;            
+            margin: 5px;
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        .cnome, .destaque {
+            background-color: chartreuse;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>
+            <col class="cnome">
+            <col>
+            <col class="destaque" span="2">
+            <col>
+        </colgroup>
+
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>João Pedro</td>
+            <td>M</td>
+            <td>25</td>
+            <td>Professor</td>
+        </tr>
+        <tr>
+            <td>Vitória Mariane</td>
+            <td>F</td>
+            <td>28</td>
+            <td>Enfermeira</td>
+        </tr>
+        <tr>
+            <td>Joana</td>
+            <td>F</td>
+            <td>21</td>
+            <td>Estudante</td>
+        </tr>
+    </table>
+</body>
+</html>
